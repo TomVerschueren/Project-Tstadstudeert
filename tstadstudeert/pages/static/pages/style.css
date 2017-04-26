@@ -1,0 +1,60 @@
+@font-face {
+    font-family: NormalFont;
+    src: url(../../Antwerpen%2520webfonts/Antwerpen%20Regular%20webfonts/Antwerpen-Regular.ttf);
+}
+
+.cfx::before, .cfx::after{
+display: table;
+content "";
+line-height: 0;
+}
+
+.cfx::after{
+clear:both;
+}
+
+*
+{
+    font-family: NormalFont;
+}
+
+header
+{
+    background-image: url(../img/backheader.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-top: 40px;
+    height: 120px;
+    padding-top: 180px;
+}
+
+header h1
+{
+    margin-left: 20px;
+}
+
+nav
+{
+    background-color: rgba(60, 60, 60, 0.5);
+}
+
+nav ul
+{
+    margin-left: 20px;
+}
+
+nav ul li
+{
+    list-style: none;
+    float: left;
+    width: 150px;
+    margin-right: 20px;
+}
+
+nav ul li a
+{
+    text-decoration: none;
+    width: 150px;
+    color: black;
+}
