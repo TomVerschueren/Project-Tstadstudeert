@@ -1,60 +1,176 @@
 @font-face {
     font-family: NormalFont;
-    src: url(../../Antwerpen%2520webfonts/Antwerpen%20Regular%20webfonts/Antwerpen-Regular.ttf);
-}
-
-.cfx::before, .cfx::after{
-display: table;
-content "";
-line-height: 0;
-}
-
-.cfx::after{
-clear:both;
+    src: url(./Antwerpen-webfonts/Antwerpen-Regular-webfonts/Antwerpen-Regular.woff);
 }
 
 *
 {
-    font-family: NormalFont;
+    font-family: 'NormalFont';
 }
 
-header
+#top-white
 {
-    background-image: url(../img/backheader.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    margin-top: 40px;
-    height: 120px;
-    padding-top: 180px;
+    height: 30px;
 }
 
-header h1
+#top-white p
 {
-    margin-left: 20px;
+    text-align: right;
+    position: relative;
+    bottom: 7px;
+    right: 24px;
+    font-size: 125%;
 }
 
-nav
+#top-white a
 {
-    background-color: rgba(60, 60, 60, 0.5);
-}
-
-nav ul
-{
-    margin-left: 20px;
-}
-
-nav ul li
-{
-    list-style: none;
-    float: left;
-    width: 150px;
-    margin-right: 20px;
-}
-
-nav ul li a
-{
+    color: #000;
+    font-weight: bold;
     text-decoration: none;
-    width: 150px;
-    color: black;
 }
+
+#head
+{
+    height: 400px;
+}
+
+#havenhuis{
+    width: 100%;
+}
+
+header{
+    height: 428px;
+    box-shadow: 0px 10px 10px #888888;
+}
+
+h1
+{
+    width: 50%;
+    position: relative;
+    font-size: 5.5em;
+    left: 40px;
+    bottom: 180px;
+    color: #fff;
+    padding: 0;
+    margin: 0;
+}
+
+/************NAV************/
+
+.page{float: left;}
+
+ul{
+    list-style: none;
+    height: 60px;
+    padding-left: 125px;
+}
+
+li a {
+    border-bottom: none;
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 1.3em;
+    padding: 5px;
+    margin: 30px;
+}
+
+nav{
+    height: 60px;
+    background-color: rgba(128, 128, 128, 0.67);
+    position: relative;
+    top: -78px;
+}
+
+li{
+    padding: 20px;
+    opacity: 1.0;
+}
+
+li a:hover
+{
+    color: #7FCAD3;
+}
+
+
+
+
+
+/**********CONTENT**********/
+
+#wrapper{
+    width: 1250px;
+    margin: 0 auto;
+    margin-bottom: 65px;
+    
+}
+
+.block
+{
+    height: 200px;
+    width: 350px;
+    background-color: #eee;
+    float: left;
+    margin-left: 50px;
+    margin-bottom: 50px;
+    box-shadow: 10px 10px 10px #888888;
+}
+
+.article
+{
+    width: 750px;
+}
+
+.textvideo
+{
+    height: 450px;
+}
+
+.rightwrapper
+{
+    float: left;
+    height: 450px;
+    width: 800px;
+}
+
+.textarticle
+{
+    float: left;
+    width: 350px;
+    margin: 0 25px;;
+}
+
+.imagearticle
+{
+    float: left;
+}
+
+.testimonialtext
+{
+    margin: 15 25;
+}
+
+.biglink
+{
+    height: 200px;
+    width: 750px;
+    background-color: #eee;
+    float: left;
+    margin-left: 50px;
+    margin-bottom: 50px;
+    box-shadow: 10px 10px 10px #888888;
+}
+
+.smalllink
+{
+    height: 200px;
+    width: 350px;
+    background-color: #eee;
+    float: left;
+    margin-left: 50px;
+    margin-bottom: 50px;
+    background-image: url(../../static/img/filler.png);
+    box-shadow: 10px 10px 10px #888888;
+}
+
+.clearfix:{ clear: both; }
