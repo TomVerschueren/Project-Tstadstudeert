@@ -1,20 +1,40 @@
 {% load static %}
 
 
-<Link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 <link rel="stylesheet" type="text/css" href="{% static 'pages/normalize.css' %}" />
 <link rel="stylesheet" type="text/css" href="{% static 'pages/style.css' %}" />
-    
-    <nav>
-        <ul>
-            <li><a href="../">home</a></li>
-            <li><a href="../nieuws">nieuws</a></li>
-            <li><a href="../praktisch">praktische info</a></li>
-            <li><a href="../testimonials">testimonials</a></li>
-            <li><a href="">links</a></li>
-            <li><a href="../chat">chat</a></li>
-        </ul>
-    </nav>
+<title>Tstadstudeert</title>
 
-    
-<p>LINKS</p>
+<header>
+    <div id="top-white">
+           <p><a href="#">Aanmelden</a></p>         
+       </div>
+       <div id="head">
+           <img id="havenhuis" src="../../static/img/backheader.png" alt="havenhuis">
+           <h1>Tstadstudeert</h1>
+       </div>
+       <nav>
+           <ul>
+               <li class="page"><a href="../">home</a></li>
+               <li class="page"><a href="../nieuws">nieuws</a></li>
+               <li class="page"><a href="../praktisch">praktische info</a></li>
+               <li class="page"><a href="../testimonials">testimonials</a></li>
+               <li class="page"><a href="">links</a></li>
+               <li class="page"><a href="../chat">chat</a></li>
+               <div class="clearfix"></div>
+           </ul>
+       </nav>
+    </header>
+    <main>
+      <div id="wrapper">
+       <div class="biglink"><img src="../../static/img/filler.png" alt="filler"><a href="">link</a></div> 
+       <div class="smalllink"><a href="">link</a></div>
+       <div class="smalllink"><a href="">link</a></div>
+       <div class="smalllink"><a href="">link</a></div> 
+       <div class="smalllink"><a href="">link</a></div> 
+       <div class="smalllink"><a href="">link</a></div>
+       <div class="biglink"><img src="../../static/img/filler.png" alt="filler"><a href="">link</a></div>
+    </div>
+    </main>
+</body>
+</html>
