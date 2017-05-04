@@ -1,23 +1,53 @@
 @font-face {
     font-family: NormalFont;
     src: url(./Antwerpen-webfonts/Antwerpen-Regular-webfonts/Antwerpen-Regular.woff);
-}
+} /*NormalFont*/
+@font-face {
+    font-family: SunAntwerpen300;
+    src: url(./Antwerpen-webfonts/SunAntwerpen_300/SunAntwerpen_300.woff);
+} /*SunAntwerpen300*/
+@font-face {
+    font-family: SunAntwerpen500;
+    src: url(./Antwerpen-webfonts/SunAntwerpen_500/SunAntwerpen_500.woff);
+} /*SunAntwerpen500*/
+@font-face {
+    font-family: SunAntwerpen700;
+    src: url(./Antwerpen-webfonts/SunAntwerpen_700/SunAntwerpen_700.woff);
+} /*SunAntwerpen700*/
+@font-face {
+    font-family: SunAntwerpen800;
+    src: url(./Antwerpen-webfonts/SunAntwerpen_800/SunAntwerpen_800.woff);
+} /*SunAntwerpen800*/
+@font-face {
+    font-family: SunAntwerpenCd300;
+    src: url(./Antwerpen-webfonts/SunAntwerpenCd_300/SunAntwerpenCd_300.woff);
+} /*SunAntwerpenCd300*/
+@font-face {
+    font-family: SunAntwerpenCd500;
+    src: url(./Antwerpen-webfonts/SunAntwerpenCd_500/SunAntwerpenCd_500.woff);
+} /*SunAntwerpenCd500*/
+@font-face {
+    font-family: SunAntwerpenCd700;
+    src: url(./Antwerpen-webfonts/SunAntwerpenCd_700/SunAntwerpenCd_700.woff);
+} /*SunAntwerpenCd700*/
+@font-face {
+    font-family: SunAntwerpenCd800;
+    src: url(./Antwerpen-webfonts/SunAntwerpenCd_800/SunAntwerpenCd_800.woff);
+} /*SunAntwerpenCd800*/
 
-*
-{
-    font-family: 'NormalFont';
-}
+* {box-sizing: border-box;}
 
 #top-white
 {
-    height: 30px;
+    height: 40px;
 }
 
 #top-white p
 {
+    font-family: 'NormalFont';
     text-align: right;
     position: relative;
-    bottom: 7px;
+    top: 7px;
     right: 24px;
     font-size: 125%;
 }
@@ -32,6 +62,7 @@
 #head
 {
     height: 400px;
+    font-family: 'NormalFont';
 }
 
 #havenhuis{
@@ -47,9 +78,9 @@ h1
 {
     width: 50%;
     position: relative;
-    font-size: 5.5em;
+    font-size: 600%;
     left: 40px;
-    bottom: 180px;
+    bottom: 45%;
     color: #fff;
     padding: 0;
     margin: 0;
@@ -73,6 +104,7 @@ li a {
     font-size: 1.3em;
     padding: 5px;
     margin: 30px;
+    font-family: 'NormalFont';
 }
 
 nav{
@@ -99,26 +131,26 @@ li a:hover
 /**********CONTENT**********/
 
 #wrapper{
-    width: 1250px;
+    width: 1150px;
     margin: 0 auto;
     margin-bottom: 65px;
-    
+    font-family: 'SunAntwerpen700';
 }
 
 .block
 {
     height: 200px;
-    width: 350px;
+    width: 30.43478260869565%;
     background-color: #eee;
     float: left;
-    margin-left: 50px;
-    margin-bottom: 50px;
+    margin-left: 8,695652173913043%;
+    margin-bottom: 8,695652173913043%;
     box-shadow: 10px 10px 10px #888888;
 }
 
 .article
 {
-    width: 750px;
+    width: 65.21739130434783%;
 }
 
 .textvideo
@@ -130,19 +162,25 @@ li a:hover
 {
     float: left;
     height: 450px;
-    width: 800px;
+    width: 65.21739130434783%;
+}
+
+.rblock
+{
+    width: 48%;
 }
 
 .textarticle
 {
     float: left;
     width: 350px;
-    margin: 0 25px;;
+    margin: 0 25px;
 }
 
 .imagearticle
 {
     float: left;
+    height: 200px;
 }
 
 .testimonialtext
