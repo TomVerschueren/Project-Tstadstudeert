@@ -43,6 +43,7 @@ $shadow-color: #888;
     font-family: 'NormalFont';
     
     width: 100%;
+    box-shadow: 10px 0 10px $shadow-color;
     
     h1 {
         float: left;
@@ -85,7 +86,7 @@ $shadow-color: #888;
                     font-size: 4em;
                 }
                 a:hover{
-                    color: #666; 
+                    color: $primary-color; 
                     text-decoration:none;
                 }
             }
@@ -105,7 +106,7 @@ $shadow-color: #888;
         
         a:hover{
             text-decoration:none; 
-            color:#666;
+            color: $primary-color;
         }
     }
 

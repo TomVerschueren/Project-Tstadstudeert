@@ -6,25 +6,32 @@ from django.urls import reverse
 from .models import School, User, Study, Campus
 
 def home(request):
-    template = loader.get_template('pages/home.html')
-    return HttpResponse(template.render(request))
+    context_data = ""
+
+    return render(request, 'pages/home.html', dict(context_data))
 
 def nieuws(request):
-    template = loader.get_template('pages/nieuws.html')
-    return HttpResponse(template.render(request))
+    context_data = ""
+
+    return render(request, 'pages/nieuws.html', dict(context_data))
+
     
 def praktisch(request):
-    template = loader.get_template('pages/praktisch.html')
-    return HttpResponse(template.render(request))
+    context_data = ""
+
+    return render(request, 'pages/praktisch.html', dict(context_data))
 
 def testimonials(request):
-    template = loader.get_template('pages/testimonials.html')
-    return HttpResponse(template.render(request))
+    context_data = ""
+
+    return render(request, 'pages/testimonials.html', dict(context_data))
 
 def links(request):
-    template = loader.get_template('pages/links.html')
-    return HttpResponse(template.render(request))
+    context_data = ""
+
+    return render(request, 'pages/links.html', dict(context_data))
 
 def chat(request):
-    template = loader.get_template('pages/chat.html')
-    return HttpResponse(template.render(request))
+    context_data = ""
+
+    return render(request, 'pages/chat.html', dict(context_data))
