@@ -86,7 +86,7 @@ $shadow-color: #888;
                     font-size: 4em;
                 }
                 a:hover{
-                    color: #666; 
+                    color: $primary-color; 
                     text-decoration:none;
                 }
             }
@@ -106,7 +106,7 @@ $shadow-color: #888;
         
         a:hover{
             text-decoration:none; 
-            color:#666;
+            color: $primary-color;
         }
     }
 

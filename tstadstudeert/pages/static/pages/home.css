@@ -70,7 +70,7 @@ nav {
         color: #666;
         font-size: 4em; }
       nav ul li a:hover {
-        color: #666;
+        color: #00A0D3;
         text-decoration: none; }
   nav li:hover {
     display: block;
@@ -82,7 +82,7 @@ nav {
     color: #666; }
   nav a:hover {
     text-decoration: none;
-    color: #666; }
+    color: #00A0D3; }
 
 .hamburger {
   background: none;
@@ -128,7 +128,7 @@ nav {
   clear: both; }
 
 main {
-  width: 100%; }
+  width: 100px; }
   main .wrapper {
     width: 80%; }
     main .wrapper .block {
