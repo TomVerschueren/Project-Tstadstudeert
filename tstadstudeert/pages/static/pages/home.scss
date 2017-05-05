@@ -1,0 +1,25 @@
+@import 'all';
+
+main
+{
+    width: 100%;
+    .wrapper
+    {
+        width: 80%;
+        .block
+        {
+            width: 100%;
+            margin: 5% 0;
+            
+            .imagearticle
+            {
+                width: 50px;
+            }
+        }
+    }
+}
+
+.imagearticle
+{
+    width: 50px;
+}
