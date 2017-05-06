@@ -1,3 +1,6 @@
+@import url("https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css");
+@import url("https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css");
+
 $primary-color: #00A0D3;
 $grey: #d8d8d8;
 $shadow-color: #888;
@@ -90,6 +93,9 @@ $shadow-color: #888;
                     text-decoration:none;
                 }
             }
+            .active{
+                color: $primary-color;
+            }
         }
         
         li:hover{
@@ -110,7 +116,8 @@ $shadow-color: #888;
         }
     }
 
-.hamburger{
+.hamburger
+{
   background:none;
   position:absolute;
   top:0;
@@ -126,7 +133,8 @@ $shadow-color: #888;
   z-index:10000000000000;
 }
 
-.cross{
+.cross
+{
   background:none;
   position:absolute;
   top:0px;
@@ -153,6 +161,65 @@ $shadow-color: #888;
     height: 40%;
     overflow: hidden;
 }
+main
+{
+    width: 100%;
+    font-family: 'SunAntwerpen700';
+}
+
+.caption{
+    .news_title
+    {
+        font-size: 3.5em;
+        color: $primary-color;
+    }
+    .desc{
+        font-size: 1.5em;
+    }
+    
+}
+
+.btn{
+    color: $primary-color;
+    border: 2px solid $primary-color;
+}
+
+//.btn-primary:hover, DIT IS VOOR ALS JE WILT HOVEREN
+//.btn-primary:focus,
+//.btn-primary:active,
+//.btn-primary.active {
+//  color: $primary-color;
+//  border-color: $primary-color;
+//}
+
+.article{
+    width: 40%;
+    border: 1px black solid;
+    height: 35%;
+    .img_wrapper{
+        width: 100%;
+        border: 1px green solid;
+        height: 100%;
+        img{
+            width: 100%;
+        }
+    }
+    .textarticle{
+        color: blue;
+        text-align: right;
+    }
+}
+
+.row{
+    margin-top: 5%;
+}
+
+.info-text{
+        font-size: 2.2em;
+        color: #000;
+//        border: 2px black solid;
+        margin-top: 5%;
+    }
 
 %clearfix {
     &:after {
@@ -160,5 +227,11 @@ $shadow-color: #888;
         display: table;
         clear: both;
     }
+}
+
+.footer{
+    height: 50%;
+    width: 100%;
+    background-color: #fff;
 }
 

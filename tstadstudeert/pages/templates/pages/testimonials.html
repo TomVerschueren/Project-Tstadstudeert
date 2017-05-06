@@ -1,33 +1,91 @@
 {% load static %}
 
 
+<!--
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+-->
+<!-- Latest compiled and minified CSS -->
+<!--
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+ Optional theme 
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+-->
+
 <link rel="stylesheet" type="text/css" href="{% static 'pages/normalize.css' %}" />
-<link rel="stylesheet" type="text/css" href="{% static 'pages/style.css' %}" />
+<link rel="stylesheet" type="text/css" href="{% static 'pages/home.css' %}" />
 <title>Tstadstudeert</title>
 
 <header>
-    <div id="top-white">
-           <p><a href="#">Aanmelden</a></p>         
-       </div>
-       <div id="head">
-           <img id="havenhuis" src="../../static/img/backheader.png" alt="havenhuis">
-           <h1>Tstadstudeert</h1>
-       </div>
-       <nav>
+    <div class="head cfx">
+        <img class="logo" src="../../static/img/A_logo_312_RGB_NEG.svg" alt="logo">
+        <h1>Tstadstudeert</h1>
+        <button class="hamburger">&#9776;</button>
+        <button class="cross">&#735;</button>
+    </div>
+    <nav>
            <ul>
                <li class="page"><a href="../">home</a></li>
                <li class="page"><a href="../nieuws">nieuws</a></li>
                <li class="page"><a href="../praktisch">praktische info</a></li>
-               <li class="page"><a href="">testimonials</a></li>
+               <li class="page"><a href="#" class="active">testimonials</a></li>
                <li class="page"><a href="../links">links</a></li>
                <li class="page"><a href="../chat">chat</a></li>
-               <div class="clearfix"></div>
            </ul>
-       </nav>
-       <style>
-           body{
-               font-family: sans-serif, 'Arial';
-           }
-       </style>
-    </header>
-<p>TESTIMONIALS</p>
+        </nav>
+        <div class="hero">
+    <img class="hero-image" src="../../static/img/backheader.png" alt="havenhuis">
+    </div>
+</header>
+    <main>
+       <div class="container">
+          
+          <div class="row">
+              <div class="col-sm-12 col-md-4">
+                <div class="thumbnail">
+                  <img src="../../static/img/testimonial01.png" alt="Les">
+                  <div class="caption">
+                    <h3 class="news_title">DRIES? ééN VAN DE DRIE GEZICHTEN ACHTER ENFNTS TERRIBLES</h3>
+                    <p>Vanwaar komt je passie voor bloggen/media?Het is vroeger begonnen met mijn passie voor mode. Ik begon modebloggers te volgen, zoals Sofie Valkiers, en ik keek heel hard op naar wat ze deden. Het leek me super cool om iets te doen en dat te kunn...</p>
+                    <p><a href="https://www.gate15.be/nl/trots/dries-een-van-de-drie-gezichten-achter-enfnts-terribles" class="btn " role="button">lees meer...</a>
+                  </div>
+                </div>
+              </div>
+           </div>
+           
+           <div class="row">
+              <div class="col-sm-12 col-md-4">
+                <div class="thumbnail">
+                  <img src="../../static/img/testimonial02.png" alt="Les">
+                  <div class="caption">
+                    <h3 class="news_title">PETER LANCEERDE DE POPULAIRE APP CHESTNOTE</h3>
+                    <p>Dag Peter, kan je eens uitleggen wat Chestnote juist is?Chestnote is een applicatie die je kan downloaden op je gsm. Via deze applicatie kan je een soort van berichten sturen naar vrienden, kennissen of zelfs vreemden. De bedoeling is dat je een ...</p>
+                    <p><a href="https://www.gate15.be/nl/trots/peter-lanceerde-de-populaire-app-chestnote" class="btn " role="button">lees meer...</a>
+                  </div>
+                </div>
+              </div>
+           </div>
+           
+           <div class="row">
+              <div class="col-sm-12 col-md-4">
+                <div class="thumbnail">
+                  <img src="../../static/img/testimonial03.png" alt="Les">
+                  <div class="caption">
+                    <h3 class="news_title">SEFORA BRENGT HAAR EERSTE GEDICHTENBUNDEL ZELF UIT!</h3>
+                    <p>Hoe is je schrijfcarrière begonnen?Ik ben initieel beginnen schrijven omdat ik een heel verlegen kind was. In plaats van dingen te zeggen schreef ik ze op. Toen ik zes jaar was schreef ik mijn eerste "boek". Eigenlijk was het ...</p>
+                    <p><a href="https://www.gate15.be/nl/nieuws/enkele-weetjes-over-de-beiaardcantus" class="btn " role="button">lees meer...</a>
+                  </div>
+                </div>
+              </div>
+           </div>
+    </main>
+</body>
+</html>
+
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script src="../../static/pages/script.js"></script>
