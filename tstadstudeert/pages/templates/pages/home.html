@@ -1,8 +1,17 @@
 {% load static %}
 
 
+<!--
 <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
 <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+-->
+<!-- Latest compiled and minified CSS -->
+<!--
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+ Optional theme 
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+-->
+
 <link rel="stylesheet" type="text/css" href="{% static 'pages/normalize.css' %}" />
 <link rel="stylesheet" type="text/css" href="{% static 'pages/home.css' %}" />
 <title>Tstadstudeert</title>
@@ -16,7 +25,7 @@
     </div>
     <nav>
            <ul>
-               <li class="page"><a href="">home</a></li>
+               <li class="page"><a href="#" class="active">home</a></li>
                <li class="page"><a href="../nieuws">nieuws</a></li>
                <li class="page"><a href="../praktisch">praktische info</a></li>
                <li class="page"><a href="../testimonials">testimonials</a></li>
@@ -29,14 +38,49 @@
     </div>
 </header>
     <main>
-       <div class="wrapper">
-            <div class="article block">
-                <img class="imagearticle" src="../../static/img/news001.png" alt="news01">
-                <div class="textarticle">
-                    <p>LocatiesBrandweerkazerne: open ruimte op de eerste verdieping van de hoofdkazerne van Brandweer Zone AntwerpenCampus National: een loftachtige locatie van Thomas More hogeschool op 't ZuidCEPA: een volledige vijfde verdieping met zicht op ...</p>
-                    <a href="https://www.gate15.be/nl/nieuws/study360-samen-blokken-op-unieke-locaties-in-antwerpen">lees meer</a>
+       <div class="container">
+          
+          <div class="row">
+              <div class="col-sm-12 col-md-4">
+                <div class="thumbnail">
+                  <img src="../../static/img/news001.png" alt="Les">
+                  <div class="caption">
+                    <h3 class="news_title">STUDY360: SAMEN BLOKKEN OP UNIEKE LOCATIES IN ANTWERPEN</h3>
+                    <p class="desc">LocatiesBrandweerkazerne: open ruimte op de eerste verdieping van de hoofdkazerne van Brandweer Zone AntwerpenCampus National: een loftachtige locatie van Thomas More hogeschool op 't ZuidCEPA: een volledige vijfde verdieping met zicht op ...</p>
+                    <p><a href="https://www.gate15.be/nl/nieuws/study360-samen-blokken-op-unieke-locaties-in-antwerpen" class="btn " role="button">lees meer...</a>
+                  </div>
                 </div>
-            </div>
+              </div>
+           </div>
+           
+           <div class="row">
+              <div class="col-sm-12 col-md-4">
+                <div class="thumbnail">
+<!--                  <img src="../../static/img/news001.png" alt="Les">-->
+                  <div class="caption">
+                    <h3 class="news_title">WORD JIJ REDDER IN ééN VAN DE ANTWERPSE ZWEMBADEN?</h3>
+                    <p class="desc">Heb je een hoger reddersdiploma en wil je mee de veiligheid van zwemmers garanderen? Kies dan deze zomer voor een studentenjob als redder in 1 van de Antwerpse zwembaden ...</p>
+                    <p><a href="https://www.gate15.be/nl/nieuws/word-jij-redder-in-een-van-de-antwerpse-zwembaden" class="btn " role="button">lees meer...</a>
+                  </div>
+                </div>
+              </div>
+           </div>
+           
+           <div class="row">
+              <div class="col-sm-12 col-md-4">
+                <div class="thumbnail">
+                  <img src="../../static/img/news002.png" alt="Les">
+                  <div class="caption">
+                    <h3 class="news_title">ENKELE WEETJES OVER DE BEIAARDCANTUS</h3>
+                    <p class="desc">Vanavond is het zover: de tweede editie van de Antwerpse Beiaardcantus. De Antwerpse studentenclubs Unifacn Wikings-NSK, PSW, Sofia, Aesculapia, Lingua en Eligia slaan de handen in elkaar en toveren de Groenplaats om tot een gigantische ...</p>
+                    <p><a href="https://www.gate15.be/nl/nieuws/enkele-weetjes-over-de-beiaardcantus" class="btn " role="button">lees meer...</a>
+                  </div>
+                </div>
+              </div>
+           </div>
+            
+            
+<!--
             
             <div class="block">
                 <img src="../../static/img/filler.png" alt="filler">
@@ -66,9 +110,15 @@
                 </div>
             </div>
        </div>
+-->
     </main>
 </body>
 </html>
+
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
 
 <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 <script src="../../static/pages/script.js"></script>
