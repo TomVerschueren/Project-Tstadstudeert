@@ -1,0 +1,175 @@
+@import url("https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css");
+@import url("https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css");
+@font-face {
+  font-family: NormalFont;
+  src: url(./Antwerpen-webfonts/Antwerpen-Regular-webfonts/Antwerpen-Regular.woff); }
+/*NormalFont*/
+@font-face {
+  font-family: SunAntwerpen300;
+  src: url(./Antwerpen-webfonts/SunAntwerpen_300/SunAntwerpen_300.woff); }
+/*SunAntwerpen300*/
+@font-face {
+  font-family: SunAntwerpen500;
+  src: url(./Antwerpen-webfonts/SunAntwerpen_500/SunAntwerpen_500.woff); }
+/*SunAntwerpen500*/
+@font-face {
+  font-family: SunAntwerpen700;
+  src: url(./Antwerpen-webfonts/SunAntwerpen_700/SunAntwerpen_700.woff); }
+/*SunAntwerpen700*/
+@font-face {
+  font-family: SunAntwerpen800;
+  src: url(./Antwerpen-webfonts/SunAntwerpen_800/SunAntwerpen_800.woff); }
+/*SunAntwerpen800*/
+@font-face {
+  font-family: SunAntwerpenCd300;
+  src: url(./Antwerpen-webfonts/SunAntwerpenCd_300/SunAntwerpenCd_300.woff); }
+/*SunAntwerpenCd300*/
+@font-face {
+  font-family: SunAntwerpenCd500;
+  src: url(./Antwerpen-webfonts/SunAntwerpenCd_500/SunAntwerpenCd_500.woff); }
+/*SunAntwerpenCd500*/
+@font-face {
+  font-family: SunAntwerpenCd700;
+  src: url(./Antwerpen-webfonts/SunAntwerpenCd_700/SunAntwerpenCd_700.woff); }
+/*SunAntwerpenCd700*/
+@font-face {
+  font-family: SunAntwerpenCd800;
+  src: url(./Antwerpen-webfonts/SunAntwerpenCd_800/SunAntwerpenCd_800.woff); }
+/*SunAntwerpenCd800*/
+.head {
+  font-family: 'NormalFont';
+  width: 100%;
+  box-shadow: 10px 0 10px #888; }
+  .head h1 {
+    float: left;
+    font-size: 4.5em;
+    padding: 1% 4% 0 4%;
+    margin-bottom: 0; }
+  .head .logo {
+    width: 20%;
+    float: left; }
+
+nav {
+  z-index: 1000000;
+  font-weight: bold;
+  width: 100%;
+  background: #d8d8d8;
+  position: absolute;
+  text-align: center;
+  font-size: 12px; }
+  nav ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    list-style-image: none; }
+    nav ul li {
+      display: block;
+      padding: 15px 0 15px 0;
+      border-bottom: #666 1px solid; }
+      nav ul li a {
+        text-decoration: none;
+        margin: 0px;
+        color: #666;
+        font-size: 4em; }
+      nav ul li a:hover {
+        color: #00A0D3;
+        text-decoration: none; }
+    nav ul .active {
+      color: #00A0D3; }
+  nav li:hover {
+    display: block;
+    background: #ffffff;
+    padding: 15px 0 15px 0;
+    border-bottom: #dddddd 1px solid; }
+  nav a {
+    text-decoration: none;
+    color: #666; }
+  nav a:hover {
+    text-decoration: none;
+    color: #00A0D3; }
+
+.hamburger {
+  background: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  line-height: 45px;
+  padding: 8.25% 5.5% 0 0;
+  color: #999;
+  border: 0;
+  font-size: 6em;
+  font-weight: bold;
+  cursor: pointer;
+  outline: none;
+  z-index: 10000000000000; }
+
+.cross {
+  background: none;
+  position: absolute;
+  top: 0px;
+  right: 0;
+  padding: 11% 6% 0 0;
+  color: #999;
+  border: 0;
+  font-size: 13em;
+  line-height: 65px;
+  font-weight: bold;
+  cursor: pointer;
+  outline: none;
+  z-index: 10000000000000; }
+
+.hero-image {
+  position: relative;
+  right: 70%; }
+
+.hero {
+  height: 40%;
+  overflow: hidden; }
+
+main {
+  width: 100%;
+  font-family: 'SunAntwerpen700'; }
+
+.caption .news_title {
+  font-size: 3.5em;
+  color: #00A0D3; }
+.caption .desc {
+  font-size: 1.5em; }
+
+.btn {
+  color: #00A0D3;
+  border: 2px solid #00A0D3; }
+
+.article {
+  width: 40%;
+  border: 1px black solid;
+  height: 35%; }
+  .article .img_wrapper {
+    width: 100%;
+    border: 1px green solid;
+    height: 100%; }
+    .article .img_wrapper img {
+      width: 100%; }
+  .article .textarticle {
+    color: blue;
+    text-align: right; }
+
+.row {
+  margin-top: 5%; }
+
+.info-text {
+  font-size: 2.2em;
+  color: #000;
+  margin-top: 5%; }
+
+.head:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+.footer {
+  height: 50%;
+  width: 100%;
+  background-color: #fff; }
+
+/*# sourceMappingURL=nieuws.css.map */
