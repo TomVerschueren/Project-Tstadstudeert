@@ -2,39 +2,108 @@
 
 
 <link rel="stylesheet" type="text/css" href="{% static 'pages/normalize.css' %}" />
-<link rel="stylesheet" type="text/css" href="{% static 'pages/style.css' %}" />
+<link rel="stylesheet" type="text/css" href="{% static 'pages/links.css' %}" />
 <title>Tstadstudeert</title>
 
 <header>
-    <div id="top-white">
-           <p><a href="#">Aanmelden</a></p>         
-       </div>
-       <div id="head">
-           <img id="havenhuis" src="../../static/img/backheader.png" alt="havenhuis">
-           <h1>Tstadstudeert</h1>
-       </div>
-       <nav>
+    <div class="head cfx">
+        <img class="logo" src="../../static/img/A_logo_312_RGB_NEG.svg" alt="logo">
+        <h1>Tstadstudeert</h1>
+        <button class="hamburger">&#9776;</button>
+        <button class="cross">&#735;</button>
+    </div>
+    <nav>
            <ul>
                <li class="page"><a href="../">home</a></li>
-               <li class="page"><a href="../nieuws">nieuws</a></li>
+               <li class="page"><a href="">nieuws</a></li>
                <li class="page"><a href="../praktisch">praktische info</a></li>
                <li class="page"><a href="../testimonials">testimonials</a></li>
-               <li class="page"><a href="">links</a></li>
-               <li class="page"><a href="../chat">chat</a></li>
-               <div class="clearfix"></div>
+               <li class="page"><a href="../links"  class="active">links</a></li>
+<!--               <li class="page"><a href="../chat">chat</a></li>-->
            </ul>
-       </nav>
-    </header>
-    <main>
-      <div id="wrapper">
-       <div class="biglink"><img src="../../static/img/filler.png" alt="filler"><a href="">link</a></div> 
-       <div class="smalllink"><a href="">link</a></div>
-       <div class="smalllink"><a href="">link</a></div>
-       <div class="smalllink"><a href="">link</a></div> 
-       <div class="smalllink"><a href="">link</a></div> 
-       <div class="smalllink"><a href="">link</a></div>
-       <div class="biglink"><img src="../../static/img/filler.png" alt="filler"><a href="">link</a></div>
+        </nav>
+        <div class="hero">
+    <img class="hero-image" src="../../static/img/backheader.png" alt="havenhuis">
     </div>
+</header>
+   
+    <main>
+        <div class="container">
+        
+        <div class="link">
+              <div class="col-sm-12 col-md-4">
+                <div class="thumbnail">
+                  <img src="../../static/img/gate15.png" alt="gate15">
+                  <div class="caption">
+                    <a href="https://www.gate15.be" class="btn linkbtn" role="button" target="_blank">Gate 15</a>
+                  </div>
+                </div>
+              </div>
+           </div>
+           
+           <div class="link">
+              <div class="col-sm-12 col-md-4">
+                <div class="thumbnail">
+                  <img src="../../static/img/logo-nmbs-sncb.png" alt="NMBS">
+                  <div class="caption">
+                    <a href="http://www.belgianrail.be/nl" class="btn linkbtn" role="button" target="_blank">NMBS</a>
+                  </div>
+                </div>
+              </div>
+           </div>
+           
+           <div class="link">
+              <div class="col-sm-12 col-md-4">
+                <div class="thumbnail">
+                  <img src="../../static/img/Logodelijn.jpg" alt="De Lijn">
+                  <div class="caption">
+                    <a href="https://www.delijn.be/nl/" class="btn linkbtn" role="button" target="_blank">De Lijn</a>
+                  </div>
+                </div>
+              </div>
+           </div>
+           
+           <div class="link">
+              <div class="col-sm-12 col-md-4">
+                <div class="thumbnail">
+                  <img src="../../static/img/Logo_KdG.png" alt="gate15">
+                  <div class="caption">
+                    <a href="https://www.kdg.be/" class="btn linkbtn" role="button" target="_blank">Karel de Grote Hogeschool</a>
+                  </div>
+                </div>
+              </div>
+           </div>
+           
+           <div class="link">
+              <div class="col-sm-12 col-md-4">
+                <div class="thumbnail">
+                  <img src="../../static/img/logo_ap.png" alt="gate15">
+                  <div class="caption">
+                    <a href="https://www.ap.be/" class="btn linkbtn" role="button" target="_blank">Artesis Plantijn Hogeschool</a>
+                  </div>
+                </div>
+              </div>
+           </div>
+           
+           <div class="link">
+              <div class="col-sm-12 col-md-4">
+                <div class="thumbnail">
+                  <img src="../../static/img/Logo-UniversiteitAntwerpen.jpg" alt="gate15">
+                  <div class="caption">
+                    <a href="https://www.uantwerpen.be/nl/" class="btn linkbtn" role="button" target="_blank">Universiteit Antwerpen</a>
+                  </div>
+                </div>
+              </div>
+           </div>
+        
+        </div>
     </main>
 </body>
 </html>
+
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script src="../../static/pages/script.js"></script>

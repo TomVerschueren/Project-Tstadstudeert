@@ -3,7 +3,8 @@
 
 $primary-color: #00A0D3;
 $grey: #d8d8d8;
-$shadow-color: #888;
+$shadow-color: #222
+    ;
 
 @font-face {
     font-family: NormalFont;
@@ -46,7 +47,7 @@ $shadow-color: #888;
     font-family: 'NormalFont';
     
     width: 100%;
-    box-shadow: 10px 0 10px $shadow-color;
+    box-shadow: 0 5px 40px $shadow-color;
     
     h1 {
         float: left;
@@ -60,6 +61,13 @@ $shadow-color: #888;
         float: left;
     }
     @extend %clearfix;
+}
+
+.static-head{
+    position: fixed;
+    z-index: 2000252200000;
+    background-color: #fff;
+    width: 100%;
 }
 
  nav {
@@ -154,6 +162,7 @@ $shadow-color: #888;
 {
     position: relative;
     right: 70%;
+    margin-top: 20%;
 }
 
 .hero
@@ -213,13 +222,6 @@ main
 .row{
     margin-top: 5%;
 }
-
-.info-text{
-        font-size: 2.2em;
-        color: #000;
-//        border: 2px black solid;
-        margin-top: 5%;
-    }
 
 %clearfix {
     &:after {

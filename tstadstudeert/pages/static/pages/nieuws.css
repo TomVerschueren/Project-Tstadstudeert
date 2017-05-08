@@ -39,7 +39,7 @@
 .head {
   font-family: 'NormalFont';
   width: 100%;
-  box-shadow: 0 5px 40px #222; }
+  box-shadow: 10px 0 10px #888; }
   .head h1 {
     float: left;
     font-size: 4.5em;
@@ -48,12 +48,6 @@
   .head .logo {
     width: 20%;
     float: left; }
-
-.static-head {
-  position: fixed;
-  z-index: 2000252200000;
-  background-color: #fff;
-  width: 100%; }
 
 nav {
   z-index: 1000000;
@@ -126,8 +120,7 @@ nav {
 
 .hero-image {
   position: relative;
-  right: 70%;
-  margin-top: 20%; }
+  right: 70%; }
 
 .hero {
   height: 40%;
@@ -164,6 +157,11 @@ main {
 .row {
   margin-top: 5%; }
 
+.info-text {
+  font-size: 2.2em;
+  color: #000;
+  margin-top: 5%; }
+
 .head:after {
   content: "";
   display: table;
@@ -174,4 +172,4 @@ main {
   width: 100%;
   background-color: #fff; }
 
-/*# sourceMappingURL=home.css.map */
+/*# sourceMappingURL=nieuws.css.map */
