@@ -1,9 +1,9 @@
-from django.shortcuts import get_object_or_404, render
+from django.shortcuts import get_object_or_404, render, render_to_response
 from django.http import Http404
 from django.http import HttpResponse, HttpResponseRedirect
 from django.template import loader
 from django.urls import reverse
-from .models import School, User, Study, Campus
+from .models import School, Study, Campus
 
 def home(request):
     context_data = ""
@@ -17,10 +17,10 @@ def nieuws(request):
 
     
 def praktisch(request):
-    context_data = ""
-
-    return render(request, 'pages/praktisch.html', dict(context_data))
-
+    studies = Study.objects.all()
+    return render_to_response('pages/praktisch.html',{'studies': studies})
+    
+    
 def testimonials(request):
     context_data = ""
 

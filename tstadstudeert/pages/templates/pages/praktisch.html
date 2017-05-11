@@ -28,10 +28,7 @@
     </div>
 </header>
     <main>
-       <div class="container">
-          <div class="bread-div">
-                  <p class="breadcrumbs">Praktische info</p>
-              </div>
+       <div class="container col-sm-12">
           <div class="col-sm-12">
              <div class="caption">
                  <p class="info-text">In Antwerpen zijn er vele scholen en nog vele meer studiemogelijkheden te vinden. Benieuwd waar je een bepaalde richting kan doen? Kies uit het menu hieronder en verken het aanbod!</p>
@@ -42,11 +39,9 @@
                         <span class="caret"></span>
                       </button>
                       <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                        <li><a href="#">1</a></li>
-                        <li><a href="#">2</a></li>
-                        <li><a href="#">3</a></li>
-                        <li role="separator" class="divider"></li>
-                        <li><a href="#">separator</a></li>
+                       {% for study in studies %}
+                        <li><a href="/praktisch/?id={{study.study_id}}">{{study.study_name}}</a></li>
+                        {% endfor %}
                       </ul>
                  </div>
            </div>
