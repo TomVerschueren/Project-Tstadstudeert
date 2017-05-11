@@ -36,18 +36,27 @@
   font-family: SunAntwerpenCd800;
   src: url(./Antwerpen-webfonts/SunAntwerpenCd_800/SunAntwerpenCd_800.woff); }
 /*SunAntwerpenCd800*/
+header {
+  width: 100%; }
+
 .head {
   font-family: 'NormalFont';
   width: 100%;
-  box-shadow: 10px 0 10px #888; }
+  box-shadow: 0 5px 40px #222; }
   .head h1 {
     float: left;
     font-size: 4.5em;
-    padding: 1% 4% 0 4%;
+    padding: 35px 0 0 25px;
     margin-bottom: 0; }
   .head .logo {
-    width: 20%;
+    width: 180px;
     float: left; }
+
+.static-head {
+  width: 100%;
+  position: fixed;
+  z-index: 2000252200000;
+  background-color: #fff; }
 
 nav {
   z-index: 1000000;
@@ -56,21 +65,27 @@ nav {
   background: #d8d8d8;
   position: absolute;
   text-align: center;
-  font-size: 12px; }
+  font-size: 12px;
+  width: 100%; }
   nav ul {
     margin: 0;
     padding: 0;
     list-style-type: none;
-    list-style-image: none; }
+    list-style-image: none;
+    width: 100%; }
     nav ul li {
       display: block;
       padding: 15px 0 15px 0;
-      border-bottom: #666 1px solid; }
+      border-bottom: #666 1px solid;
+      width: 100%; }
       nav ul li a {
+        display: block;
         text-decoration: none;
         margin: 0px;
         color: #666;
-        font-size: 4em; }
+        font-size: 4em;
+        width: 100%;
+        text-align: center; }
       nav ul li a:hover {
         color: #00A0D3;
         text-decoration: none; }
@@ -94,7 +109,7 @@ nav {
   top: 0;
   right: 0;
   line-height: 45px;
-  padding: 8.25% 5.5% 0 0;
+  padding: 70px 35px 0 0;
   color: #999;
   border: 0;
   font-size: 6em;
@@ -108,7 +123,7 @@ nav {
   position: absolute;
   top: 0px;
   right: 0;
-  padding: 11% 6% 0 0;
+  padding: 100px 40px 0 0;
   color: #999;
   border: 0;
   font-size: 13em;
@@ -120,21 +135,33 @@ nav {
 
 .hero-image {
   position: relative;
-  right: 70%; }
+  max-height: 100%;
+  vertical-align: middle;
+  margin-top: 180px; }
 
 .hero {
-  height: 40%;
+  width: 100%;
+  height: 600px;
   overflow: hidden; }
+
+.bread-div {
+  margin: 5% 0 5% 0;
+  padding: 0; }
+  .bread-div .breadcrumbs {
+    color: #00A0D3;
+    font-size: 2em;
+    width: 100%;
+    text-align: center; }
 
 main {
   width: 100%;
   font-family: 'SunAntwerpen700'; }
 
 .caption .news_title {
-  font-size: 3.5em;
+  font-size: 3em;
   color: #00A0D3; }
 .caption .desc {
-  font-size: 1.5em; }
+  font-size: 2em; }
 
 .btn {
   color: #00A0D3;
@@ -155,12 +182,11 @@ main {
     text-align: right; }
 
 .row {
-  margin-top: 5%; }
+  margin-bottem: 5%; }
 
-.info-text {
-  font-size: 2.2em;
-  color: #000;
-  margin-top: 5%; }
+@media screen and (min-width: 800px) {
+  .row:nth-child(odd) {
+    margin-right: 20px; } }
 
 .head:after {
   content: "";
@@ -179,5 +205,8 @@ main {
 
 .linkbtn {
   width: 100%; }
+
+.thumbnail img {
+  height: 10%; }
 
 /*# sourceMappingURL=links.css.map */

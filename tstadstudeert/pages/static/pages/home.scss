@@ -1,1 +1,8 @@
 @import 'all';
+
+.row
+{
+    float: left;
+    @extend %clearfix;
+}
+
