@@ -1,73 +1,91 @@
 {% load static %}
 
-
-<link rel="stylesheet" type="text/css" href="{% static 'pages/normalize.css' %}" />
-<link rel="stylesheet" type="text/css" href="{% static 'pages/nieuws.css' %}" />
-<title>Tstadstudeert</title>
-
-<header>
-   <div class="static-head">
-    <div class="head cfx">
-        <img class="logo" src="../../static/img/A_logo_312_RGB_NEG.svg" alt="logo">
-        <h1>Tstadstudeert</h1>
-        <button class="hamburger">&#9776;</button>
-        <button class="cross">&#735;</button>
-    </div>
-    <nav>
-           <ul>
-               <li class="page"><a href="../">home</a></li>
-               <li class="page"><a href="" class="active">nieuws</a></li>
-               <li class="page"><a href="../praktisch">praktische info</a></li>
-               <li class="page"><a href="../testimonials">testimonials</a></li>
-               <li class="page"><a href="../links">links</a></li>
-<!--               <li class="page"><a href="../chat">chat</a></li>-->
-           </ul>
-        </nav>
-    </div>
-        <div class="hero">
-    <img class="hero-image" src="../../static/img/backheader.png" alt="havenhuis">
-    </div>
-</header>
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="{% static 'pages/normalize.css' %}" />
+    <link rel="stylesheet" type="text/css" href="{% static 'pages/nieuws.css' %}" />
+    <title>Tstadstudeert</title>
+</head>
+<body>
+    <header>
+       <div class="static-head">
+        <div class="head cfx">
+            <img class="logo" src="../../static/img/A_logo_312_RGB_NEG.svg" alt="logo">
+            <h1>Tstadstudeert</h1>
+            <button class="hamburger">&#9776;</button>
+            <button class="cross">&#735;</button>
+        </div>
+        <section class="side-nav container-fluid">
+                <ul class="side-ul nav-pills navbar-nav nav">
+                    <li class="side-li presentation"><a class="side-a" href="../">home</a></li>
+                    <li class="side-li presentation"><a class="side-a side-active" href="#">nieuws</a></li>
+                    <li class="side-li presentation"><a class="side-a" href="../praktisch">praktische info</a></li>
+                    <li class="side-li presentation"><a class="side-a" href="../testimonials">testimonials</a></li>
+                    <li class="side-li presentation"><a class="side-a" href="../links">links</a></li>
+                </ul>
+        </section>
+        <nav>
+               <ul>
+                   <li class="page"><a href="../">home</a></li>
+                   <li class="page"><a href="" class="active">nieuws</a></li>
+                   <li class="page"><a href="../praktisch">praktische info</a></li>
+                   <li class="page"><a href="../testimonials">testimonials</a></li>
+                   <li class="page"><a href="../links">links</a></li>
+    <!--               <li class="page"><a href="../chat">chat</a></li>-->
+               </ul>
+            </nav>
+        </div>
+            <div class="hero">
+        <img class="hero-image" src="../../static/img/backheader.png" alt="havenhuis">
+        </div>
+    </header>
     <main>
-       <div class="container col-sm-12">
+          <div class="center">
+           <div class="container-fluid">
+              <div class="bread-div">
+                  <p class="breadcrumbs">Nieuws</p>
+              </div>
           
-              <div class="row col-sm-12 col-md-6 col-lg-5">
+              <div class="colom1 col-lg-4">
                 <div class="thumbnail">
                   <img src="../../static/img/news001.png" alt="Les">
                   <div class="caption">
                     <h3 class="news_title">STUDY360: SAMEN BLOKKEN OP UNIEKE LOCATIES IN ANTWERPEN</h3>
                     <p class="desc">LocatiesBrandweerkazerne: open ruimte op de eerste verdieping van de hoofdkazerne van Brandweer Zone AntwerpenCampus National: een loftachtige locatie van Thomas More hogeschool op 't ZuidCEPA: een volledige vijfde verdieping met zicht op ...</p>
-                    <p><a href="https://www.gate15.be/nl/nieuws/study360-samen-blokken-op-unieke-locaties-in-antwerpen" class="btn " role="button" target="_blank">lees meer...</a>
+                    <p class="pbtn"><a href="https://www.gate15.be/nl/nieuws/study360-samen-blokken-op-unieke-locaties-in-antwerpen" class="btn " role="button" target="_blank">LEES MEER</a>
                   </div>
                 </div>
               </div>
            
-              <div class="row col-sm-12 col-md-6 col-lg-5">
+              <div class="colom2 col-lg-4">
                 <div class="thumbnail">
                   <div class="caption">
-                    <h3 class="news_title">WORD JIJ REDDER IN ééN VAN DE ANTWERPSE ZWEMBADEN?</h3>
+                    <h3 class="news_title">WORD JIJ REDDER IN EEN VAN DE ANTWERPSE ZWEMBADEN?</h3>
                     <p class="desc">Heb je een hoger reddersdiploma en wil je mee de veiligheid van zwemmers garanderen? Kies dan deze zomer voor een studentenjob als redder in 1 van de Antwerpse zwembaden ...</p>
-                    <p><a href="https://www.gate15.be/nl/nieuws/word-jij-redder-in-een-van-de-antwerpse-zwembaden" class="btn " role="button" target="_blank">lees meer...</a>
+                    <p class="pbtn"><a href="https://www.gate15.be/nl/nieuws/word-jij-redder-in-een-van-de-antwerpse-zwembaden" class="btn " role="button" target="_blank">LEES MEER</a>
                   </div>
                 </div>
               </div>
            
-              <div class="row col-sm-12 col-md-6 col-lg-5">
+              <div class="colom3 col-lg">
                 <div class="thumbnail">
                   <img src="../../static/img/news002.png" alt="Les">
                   <div class="caption">
                     <h3 class="news_title">ENKELE WEETJES OVER DE BEIAARDCANTUS</h3>
                     <p class="desc">Vanavond is het zover: de tweede editie van de Antwerpse Beiaardcantus. De Antwerpse studentenclubs Unifacn Wikings-NSK, PSW, Sofia, Aesculapia, Lingua en Eligia slaan de handen in elkaar en toveren de Groenplaats om tot een gigantische ...</p>
-                    <p><a href="https://www.gate15.be/nl/nieuws/enkele-weetjes-over-de-beiaardcantus" class="btn " role="button" target="_blank">lees meer...</a>
+                    <p class="pbtn"><a href="https://www.gate15.be/nl/nieuws/enkele-weetjes-over-de-beiaardcantus" class="btn " role="button" target="_blank">LEES MEER</a>
                   </div>
                 </div>
            </div>
+        </div>
+      </div>
     </main>
 </body>
 </html>
 
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
 
-<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 <script src="../../static/pages/script.js"></script>

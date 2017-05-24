@@ -4,6 +4,10 @@ from django.http import HttpResponse, HttpResponseRedirect
 from django.template import loader
 from django.urls import reverse
 from .models import School, Study, Campus
+from django.core.exceptions import ObjectDoesNotExist
+from pprint import pprint
+import sys
+
 
 def home(request):
     context_data = ""
@@ -18,7 +22,18 @@ def nieuws(request):
     
 def praktisch(request):
     studies = Study.objects.all()
-    return render_to_response('pages/praktisch.html',{'studies': studies})
+    studyID = request.GET.get('id', 0)
+    schools = School.objects.all()
+    campussen = Campus.objects.all()
+    try:
+        studyobj = Study.objects.get(pk=studyID)
+        schoolobj = studyobj.study_school_name
+        campusobj = studyobj.study_campus_name
+    except ObjectDoesNotExist:
+        studyobj = None
+        schoolobj = None
+        campusobj = None
+    return render_to_response('pages/praktisch.html',{'studies': studies, 'studyID': studyID, 'studyobj': studyobj, 'schoolobj': schoolobj, 'campusobj': campusobj})
     
     
 def testimonials(request):

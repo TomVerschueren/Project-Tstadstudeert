@@ -10,10 +10,16 @@
 .linkbtn
 {
     width: 100%;
+    p{
+        font-size: 1.5em;
+        padding-top: 15px;
+    }
 }
 
 .thumbnail{
-    img{
-        height: 10%;
+        .caption{
+            img{
+            height: 20%;
+        }
     }
 }

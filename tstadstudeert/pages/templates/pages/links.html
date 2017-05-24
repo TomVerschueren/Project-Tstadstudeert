@@ -1,87 +1,135 @@
 {% load static %}
 
-
-<link rel="stylesheet" type="text/css" href="{% static 'pages/normalize.css' %}" />
-<link rel="stylesheet" type="text/css" href="{% static 'pages/links.css' %}" />
-<title>Tstadstudeert</title>
-
-<header>
-   <div class="static-head">
-    <div class="head cfx">
-        <img class="logo" src="../../static/img/A_logo_312_RGB_NEG.svg" alt="logo">
-        <h1>Tstadstudeert</h1>
-        <button class="hamburger">&#9776;</button>
-        <button class="cross">&#735;</button>
-    </div>
-    <nav>
-           <ul>
-               <li class="page"><a href="../">home</a></li>
-               <li class="page"><a href="../nieuws">nieuws</a></li>
-               <li class="page"><a href="../praktisch">praktische info</a></li>
-               <li class="page"><a href="../testimonials">testimonials</a></li>
-               <li class="page"><a href=""  class="active">links</a></li>
-<!--               <li class="page"><a href="../chat">chat</a></li>-->
-           </ul>
-        </nav>
-    </div>
-    <div class="hero">
-        <img class="hero-image" src="../../static/img/backheader.png" alt="havenhuis">
-    </div>
-</header>
-   
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="{% static 'pages/normalize.css' %}" />
+    <link rel="stylesheet" type="text/css" href="{% static 'pages/links.css' %}" />
+    <title>Tstadstudeert</title>
+</head>
+<body>
+    <header>
+       <div class="static-head">
+        <div class="head cfx">
+            <img class="logo" src="../../static/img/A_logo_312_RGB_NEG.svg" alt="logo">
+            <h1>Tstadstudeert</h1>
+            <button class="hamburger">&#9776;</button>
+            <button class="cross">&#735;</button>
+        </div>
+        <section class="side-nav container-fluid">
+                <ul class="side-ul nav-pills navbar-nav nav">
+                    <li class="side-li presentation"><a class="side-a" href="../">home</a></li>
+                    <li class="side-li presentation"><a class="side-a" href="../nieuws">nieuws</a></li>
+                    <li class="side-li presentation"><a class="side-a" href="../praktisch">praktische info</a></li>
+                    <li class="side-li presentation"><a class="side-a" href="../testimonials">testimonials</a></li>
+                    <li class="side-li presentation"><a class="side-a side-active" href="#">links</a></li>
+                </ul>
+        </section>
+        <nav>
+               <ul>
+                   <li class="page"><a href="../">home</a></li>
+                   <li class="page"><a href="../nieuws">nieuws</a></li>
+                   <li class="page"><a href="../praktisch">praktische info</a></li>
+                   <li class="page"><a href="../testimonials">testimonials</a></li>
+                   <li class="page"><a href=""  class="active">links</a></li>
+    <!--               <li class="page"><a href="../chat">chat</a></li>-->
+               </ul>
+            </nav>
+        </div>
+        <div class="hero">
+            <img class="hero-image" src="../../static/img/backheader.png" alt="havenhuis">
+        </div>
+    </header>
     <main>
-        <div class="container col-sm-12">
+        <div class="container">
+              <div class="bread-div">
+                  <p class="breadcrumbs">Handige links</p>
+              </div>
               
               <div class="link col-sm-12 col-md-6">
                 <div class="thumbnail">
-                  <img src="../../static/img/gate15.png" alt="gate15">
-                  <div class="caption">
-                    <a href="https://www.gate15.be" class="btn linkbtn" role="button" target="_blank">Gate 15</a>
+                 <div class="caption">
+                     <a href="https://www.gate15.be" class="btn linkbtn" role="button" target="_blank">
+                      <img src="../../static/img/gate15.png" alt="gate15">
+                        <p>Gate 15</p>
+                      </a>
                   </div>
                 </div>
               </div>
            
               <div class="link col-sm-12 col-md-6">
                 <div class="thumbnail">
-                  <img src="../../static/img/logo-nmbs-sncb.png" alt="NMBS">
-                  <div class="caption">
-                    <a href="http://www.belgianrail.be/nl" class="btn linkbtn" role="button" target="_blank">NMBS</a>
+                 <div class="caption">
+                      <a href="http://www.belgianrail.be/nl" class="btn linkbtn" role="button" target="_blank">
+                          <img src="../../static/img/logo-nmbs-sncb.png" alt="NMBS"> 
+                          <p>NMBS</p>
+                      </a>
                   </div>
                 </div>
               </div>
            
               <div class="link col-sm-12 col-md-6">
                 <div class="thumbnail">
-                  <img src="../../static/img/Logodelijn.jpg" alt="De Lijn">
-                  <div class="caption">
-                    <a href="https://www.delijn.be/nl/" class="btn linkbtn" role="button" target="_blank">De Lijn</a>
+                 <div class="caption">
+                    <a href="https://www.delijn.be/nl/" class="btn linkbtn" role="button" target="_blank">
+                      <img src="../../static/img/Logodelijn.jpg" alt="De Lijn">
+                        <p>De Lijn</p>
+                      </a>
                   </div>
                 </div>
               </div>
            
               <div class="link col-sm-12 col-md-4">
                 <div class="thumbnail">
-                  <img src="../../static/img/Logo_KdG.png" alt="gate15">
-                  <div class="caption">
-                    <a href="https://www.kdg.be/" class="btn linkbtn" role="button" target="_blank">Karel de Grote Hogeschool</a>
+                 <div class="caption">
+                    <a href="https://www.kdg.be/" class="btn linkbtn" role="button" target="_blank">
+                        <img src="../../static/img/Logo_KdG.png" alt="KdG">
+                          <p>Karel de Grote Hogeschool</p>
+                      </a>
                   </div>
                 </div>
               </div>
            
               <div class="link col-sm-12 col-md-6">
                 <div class="thumbnail">
-                  <img src="../../static/img/logo_ap.png" alt="gate15">
-                  <div class="caption">
-                    <a href="https://www.ap.be/" class="btn linkbtn" role="button" target="_blank">Artesis Plantijn Hogeschool</a>
+                 <div class="caption">
+                    <a href="https://www.ap.be/" class="btn linkbtn" role="button" target="_blank">
+                  <img src="../../static/img/logo_ap.png" alt="AP">
+                  <p>Artesis Plantijn Hogeschool</p>
+                  </a>
                   </div>
                 </div>
               </div>
            
               <div class="link col-sm-12 col-md-6">
                 <div class="thumbnail">
-                  <img src="../../static/img/Logo-UniversiteitAntwerpen.jpg" alt="gate15">
-                  <div class="caption">
-                    <a href="https://www.uantwerpen.be/nl/" class="btn linkbtn" role="button" target="_blank">Universiteit Antwerpen</a>
+                 <div class="caption">
+                    <a href="https://www.uantwerpen.be/nl/" class="btn linkbtn" role="button" target="_blank">
+                      <img src="../../static/img/Logo-UniversiteitAntwerpen.jpg" alt="UA">
+                        <p>Universiteit Antwerpen</p>
+                   </a>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="link col-sm-12 col-md-6">
+                <div class="thumbnail">
+                 <div class="caption">
+                    <a href="http://www.thomasmore.be/" class="btn linkbtn" role="button" target="_blank">
+                      <img src="../../static/img/logo_thomas_more.png" alt="Thomas More">
+                        <p>Thomas More</p>
+                   </a>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="link col-sm-12 col-md-6">
+                <div class="thumbnail">
+                 <div class="caption">
+                    <a href="https://www.kuleuven.be/kuleuven/" class="btn linkbtn" role="button" target="_blank">
+                      <img src="../../static/img/KULeuven-logo.png" alt="KU Leuven">
+                        <p>KU Leuven</p>
+                   </a>
                   </div>
                 </div>
               </div>
@@ -91,9 +139,7 @@
 </body>
 </html>
 
-
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
-
-<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 <script src="../../static/pages/script.js"></script>

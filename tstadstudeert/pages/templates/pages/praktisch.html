@@ -1,9 +1,13 @@
 {% load static %}
 
-<link rel="stylesheet" type="text/css" href="{% static 'pages/normalize.css' %}" />
-<link rel="stylesheet" type="text/css" href="{% static 'pages/praktisch.css' %}" />
-<title>Tstadstudeert</title>
-
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="{% static 'pages/normalize.css' %}" />
+    <link rel="stylesheet" type="text/css" href="{% static 'pages/praktisch.css' %}" />
+    <title>Tstadstudeert</title>
+</head>
+<body>
 <header>
    <div class="static-head">
     <div class="head cfx">
@@ -12,6 +16,15 @@
         <button class="hamburger">&#9776;</button>
         <button class="cross">&#735;</button>
     </div>
+    <section class="side-nav container-fluid">
+            <ul class="side-ul nav-pills navbar-nav nav">
+                <li class="side-li presentation"><a class="side-a" href="../">home</a></li>
+                <li class="side-li presentation"><a class="side-a" href="../nieuws">nieuws</a></li>
+                <li class="side-li presentation"><a class="side-a side-active" href="#">praktische info</a></li>
+                <li class="side-li presentation"><a class="side-a" href="../testimonials">testimonials</a></li>
+                <li class="side-li presentation"><a class="side-a" href="../links">links</a></li>
+            </ul>
+    </section>
     <nav>
            <ul>
                <li class="page"><a href="../">home</a></li>
@@ -35,7 +48,12 @@
              </div>
                  <div class="dropdown">
                       <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                       {% if studyID == 0 %}
                         Studierichting
+                        {% endif %}
+                        {% if studyID != 0 %}
+                        {{studyobj.study_name}}
+                        {% endif %}
                         <span class="caret"></span>
                       </button>
                       <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
@@ -44,6 +62,15 @@
                         {% endfor %}
                       </ul>
                  </div>
+                 {% if studyID != 0 %}
+                 <h1>{{studyobj.study_school_name}} {{studyobj.study_campus_name}}</h1>
+                 <p>{{studyobj.study_info}}</p>
+                 <p>{{schoolobj.school_info}}</p>
+                 <p>{{campusobj.campus_info}}</p>
+                 {% endif %}
+                 <div>
+                 
+              </div>
            </div>
            <div class="footer">
                 

@@ -19,3 +19,8 @@ $('.dropdown-toggle').dropdown();
 $(document).ready(function() {
     $(".dropdown-toggle").dropdown();
 });
+
+$(window).scroll(function(){
+    $(".hero").css("opacity", 1 - $(window).scrollTop() / 350);
+});
+     
