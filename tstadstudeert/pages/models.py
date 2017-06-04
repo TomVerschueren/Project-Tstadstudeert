@@ -2,7 +2,6 @@ from __future__ import unicode_literals
 
 from django.db import models
 
-
 class School(models.Model):
     school_id = models.IntegerField()
     school_name = models.CharField(max_length=100)
@@ -34,6 +33,12 @@ class Study(models.Model):
     class Meta:
         verbose_name_plural = "Studies"
     
+    
+class Article(models.Model):
+    article_title = models.CharField(max_length=100)
+    article_text = models.CharField(max_length=2000)
+    article_image = models.ImageField(blank = True, null = True)
+    must_show = models.BooleanField()
     
 #class User(models.Model):
 #    user_id = models.IntegerField()

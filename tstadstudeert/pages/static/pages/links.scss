@@ -2,24 +2,26 @@
 
 .link
 {
-    margin-top: 5%;
     width: 50%;
-    float: left;
-}
-
-.linkbtn
-{
-    width: 100%;
-    p{
-        font-size: 1.5em;
-        padding-top: 15px;
-    }
-}
-
-.thumbnail{
-        .caption{
-            img{
-            height: 20%;
-        }
-    }
+    height: 300px;
+    margin-bottom: 5%;
+    .thumbnail{
+            height: 300px;
+            .caption{
+                .linkbtn
+                {
+                    width: 100%;
+                    padding: 0 auto;
+                    img{
+                        height: 200px;
+                        margin: 0 auto;
+//                        display: block;
+//                        margin: 0 auto;
+                    }
+                    p{
+                        font-size: 1.5em;
+                    }                
+                }
+            }
+    }        
 }
