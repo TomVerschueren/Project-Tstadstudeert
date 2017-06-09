@@ -15,11 +15,12 @@ class Campus(models.Model):
     campus_name = models.CharField(max_length=100)
     campus_info = models.CharField(max_length=500)
     campus_school_name = models.ForeignKey(School, on_delete=models.CASCADE)
+    campus_image = models.ImageField(blank = True, null = True)
     def __str__(self):
         return self.campus_name
     
     class Meta:
-        verbose_name_plural = "Campuses"
+        verbose_name_plural = "Campusses"
 
 class Study(models.Model):
     study_id = models.IntegerField()

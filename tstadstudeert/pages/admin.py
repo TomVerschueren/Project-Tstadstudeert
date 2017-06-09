@@ -6,7 +6,7 @@ class SchoolAdmin(admin.ModelAdmin):
         fields = ['school_id', 'school_name', 'school_info']
         
 class CampusAdmin(admin.ModelAdmin):
-        fields = ['campus_id', 'campus_name', 'campus_school_name', 'campus_info']
+        fields = ['campus_id', 'campus_name', 'campus_school_name', 'campus_info', 'campus_image']
         list_display = ('campus_name', 'campus_school_name')
         
 class StudyAdmin(admin.ModelAdmin):

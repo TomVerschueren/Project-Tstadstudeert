@@ -49,6 +49,21 @@
               </div>
           
               <div class="colom1 col-lg-4">
+               
+               {% for article in articles %}
+                 {% if article.must_show %}
+                  <div class="row-flex row-fluid">
+                    <div class="thumbnail">
+                      <img src="../../static/img/{{ article.article_image }}" alt="Foto">
+                      <div class="caption"> 
+                        <h3 class="news_title">{{ article.article_title }}</h3>
+                        <p class="desc">{{ article.article_text }}</p>
+                        <p class="pbtn"><a href="https://www.youtube.com/watch?v=Q0nLdnB_Ezw&t=22s" class="btn " role="button" target="_blank">LEES MEER</a>
+                      </div>
+                    </div>
+                  </div>
+                  {% endif %}
+                {% endfor %}
                 <div class="thumbnail">
                   <img src="../../static/img/news001.png" alt="Les">
                   <div class="caption">
@@ -78,6 +93,7 @@
                     <p class="pbtn"><a href="https://www.gate15.be/nl/nieuws/enkele-weetjes-over-de-beiaardcantus" class="btn " role="button" target="_blank">LEES MEER</a>
                   </div>
                 </div>
+                
            </div>
         </div>
       </div>

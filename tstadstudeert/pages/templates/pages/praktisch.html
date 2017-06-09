@@ -42,42 +42,42 @@
     </div>
 </header>
     <main>
-       <div class="container col-sm-12">
-          <div class="col-sm-12">
-             <div class="caption">
-                <div class="bread-div">
-                     <p class="breadcrumbs">Praktische info</p>
-                </div>
-                 <p class="info-text">In Antwerpen zijn er vele scholen en nog vele meer studiemogelijkheden te vinden. Benieuwd waar je een bepaalde richting kan doen? Kies uit het menu hieronder en verken het aanbod!</p>
-             </div>
-                 <div class="dropdown">
-                      <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                       {% if studyID == 0 %}
-                        Studierichting
-                        {% endif %}
-                        {% if studyID != 0 %}
-                        {{studyobj.study_name}}
-                        {% endif %}
-                        <span class="caret"></span>
-                      </button>
-                      <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                       {% for study in studies %}
-                        <li><a href="/praktisch/?id={{study.study_id}}">{{study.study_name}}</a></li>
-                        {% endfor %}
-                      </ul>
-                 </div>
-                 {% if studyID != 0 %}
-                 <p class="study_info">{{studyobj.study_info}}</p>
-                 <h2 class="study_school_name">{{studyobj.study_school_name}}</h2>
-                 <p class="school_info">{{schoolobj.school_info}}</p>
-                 <h2 class="campus_name">{{studyobj.study_campus_name}}</h2>
-                 <p class="campus_info">{{campusobj.campus_info}}</p>
-                 {% endif %}
-                 <div>
-                 
-              </div>
+      <div class="center">
+           <div class="container-fluid">
+          
+                     <div class="caption">
+                        <div class="bread-div">
+                             <p class="breadcrumbs">Praktische info</p>
+                        </div>
+                         <p class="info-text">In Antwerpen zijn er vele scholen en nog vele meer studiemogelijkheden te vinden. Benieuwd waar je een bepaalde richting kan doen? Kies uit het menu hieronder en verken het aanbod!</p>
+                     </div>
+                         <div class="dropdown">
+                              <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                               {% if studyID == 0 %}
+                                Studierichting
+                                {% endif %}
+                                {% if studyID != 0 %}
+                                {{studyobj.study_name}}
+                                {% endif %}
+                                <span class="caret"></span>
+                              </button>
+                              <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                               {% for study in studies %}
+                                <li><a href="/praktisch/?id={{study.study_id}}">{{study.study_name}}</a></li>
+                                {% endfor %}
+                              </ul>
+                         </div>
+                         {% if studyID != 0 %}
+                         <p class="study_info">{{studyobj.study_info}}</p>
+                         <h2 class="study_school_name">{{studyobj.study_school_name}}</h2>
+                         <p class="school_info">{{schoolobj.school_info}}</p>
+                         <h2 class="campus_name">{{studyobj.study_campus_name}}</h2>
+                         <div class="campus_info">
+                             <p>{{campusobj.campus_info}}</p>
+                             <img class="campus_img" src="../../static/img/{{campusobj.campus_image}}" alt="campus">
+                         </div>
+                         {% endif %}
            </div>
-           
           </div>
        </div>
     </main>
@@ -85,7 +85,9 @@
     <p> .</p>
     <p> .</p>
     <p> .</p>
-    <p>. </p>
+    <p> .</p>
+    <p> .</p>
+    <p> .</p>
     </footer>
 </body>
 </html>

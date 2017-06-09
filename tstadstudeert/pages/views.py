@@ -3,21 +3,23 @@ from django.http import Http404
 from django.http import HttpResponse, HttpResponseRedirect
 from django.template import loader
 from django.urls import reverse
-from .models import School, Study, Campus
+from .models import School, Study, Campus, Article
 from django.core.exceptions import ObjectDoesNotExist
 from pprint import pprint
 import sys
 
 
 def home(request):
-    context_data = ""
+    articles = Article.objects.all()
 
-    return render(request, 'pages/home.html', dict(context_data))
-
+    return render_to_response('pages/home.html',  {'articles': articles})
+    
+    
 def nieuws(request):
-    context_data = ""
-
-    return render(request, 'pages/nieuws.html', dict(context_data))
+    articles = Article.objects.all()
+    
+    return render_to_response('pages/nieuws.html', {'articles': articles})
+    
 
     
 def praktisch(request):
@@ -50,3 +52,9 @@ def chat(request):
     context_data = ""
 
     return render(request, 'pages/chat.html', dict(context_data))
+
+def save_events_json(request):
+    if request.is_ajax():
+        if request.method == 'POST':
+            print 'Raw Data: "%s"' % request.body   
+    return HttpResponse("OK")

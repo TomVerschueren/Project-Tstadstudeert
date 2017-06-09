@@ -81,50 +81,45 @@
                   </div>
                 </div>
               </div>
+              
+              <div class="row-flex row-fluid">
+                <div class="thumbnail">
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/73wfuYU0gaE?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+                  <div class="caption">
+                    <h3 class="news_title">WELCOME @ GATE15</h3>
+                    <p class="desc">GATE15 welcomes all students in our house on the Kleine Kauwenberg 15, 2000 Antwerp. Take a look at our little movie to get to know us and what you can do at our place!</p>
+                    <p class="pbtn"><a href="https://www.youtube.com/watch?v=73wfuYU0gaE" class="btn " role="button" target="_blank">LEES MEER</a>
+                  </div>
+                </div>
+            </div> 
            </div>
             
            <div class="colom3 col-lg-4">
             <div class="row-flex row-fluid">
                 <div class="thumbnail">
-                  <img src="../../static/img/news002.png" alt="Les">
+                  <iframe  src="https://www.youtube.com/embed/Q0nLdnB_Ezw?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen alt='les'></iframe>
                   <div class="caption">
-                    <h3 class="news_title">ENKELE WEETJES OVER DE BEIAARDCANTUS</h3>
-                    <p class="desc">Vanavond is het zover: de tweede editie van de Antwerpse Beiaardcantus. De Antwerpse studentenclubs Unifacn Wikings-NSK, PSW, Sofia, Aesculapia, Lingua en Eligia slaan de handen in elkaar en toveren de Groenplaats om tot een gigantische ...</p>
-                    <p class="pbtn"><a href="https://www.gate15.be/nl/nieuws/enkele-weetjes-over-de-beiaardcantus" class="btn " role="button" target="_blank">LEES MEER</a>
+                    <h3 class="news_title">AAN ALLE STUDENTEN, WELKOM IN ANTWERPEN!</h3>
+                    <p class="desc">&amp; welkom in GATE15</p>
+                    <p class="pbtn"><a href="https://www.youtube.com/watch?v=Q0nLdnB_Ezw&t=22s" class="btn " role="button" target="_blank">LEES MEER</a>
                   </div>
                 </div>
               </div>
-           </div> 
-            
-<!--
-            <div class="block">
-                <img src="../../static/img/filler.png" alt="filler">
-            </div>
-            
-            <div class="textvideo block">
-                <img src="../../static/img/filler.png" alt="filler">
-                <div class="testimonialtext">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet...</p>
-                    <a href="">lees meer</a>
-                </div>
-            </div>
-            
-            <div class="rightwrapper">
-                <div class="block">
-                    <p>link</p>
-                </div>
-                <div class="block">
-                    <img src="../../static/img/filler.png" alt="filler">
-                </div>
-                <div class="article block">
-                    <img class="imagearticle" src="../../static/img/filler.png" alt="filler">
-                    <div class="textarticle">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet...</p>
-                        <a href="">lees meer</a>
+              {% for article in articles %}
+                 {% if article.must_show %}
+                  <div class="row-flex row-fluid">
+                    <div class="thumbnail">
+                      <img src="../../static/img/{{ article.article_image }}" alt="Foto">
+                      <div class="caption"> 
+                        <h3 class="news_title">{{ article.article_title }}</h3>
+                        <p class="desc">{{ article.article_text }}</p>
+                        <p class="pbtn"><a href="https://www.youtube.com/watch?v=Q0nLdnB_Ezw&t=22s" class="btn " role="button" target="_blank">LEES MEER</a>
+                      </div>
                     </div>
-                </div>
-            </div>
--->
+                  </div>
+                  {% endif %}
+                {% endfor %}
+           </div> 
          </div>
        </div>
     </main>

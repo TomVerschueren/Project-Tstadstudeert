@@ -1,8 +1,5 @@
 @import 'all';
 
-
-
-
 @media screen and (min-width: 1300px){ //Desktop
     .info-text{
             font-size: 1.5em;
@@ -49,6 +46,10 @@
         font-size: 1.2em;
         margin: 2% 5%;
     }
+    .campus_img
+    {
+        width: 20%;
+    }
 }
 
 @media screen and (max-width: 1300px){ //Tablet
@@ -65,6 +66,7 @@
             height: 100px;
         }
         .dropdown-menu{
+            width: 100%;
             li{
                 a{
                     font-size: 2.5em;
@@ -95,7 +97,7 @@
     }
 }
 
-@media screen and (max-width: 800px){ //Mobile
+@media screen and (max-width: 784px){ //Mobile
     .info-text{
         font-size: 2.2em;
         width: 55%;
@@ -109,6 +111,7 @@
             height: 100px;
         }
         .dropdown-menu{
+            width: 100%;
             li{
                 a{
                     font-size: 2.5em;
